@@ -1,0 +1,9 @@
+.DS_Store
+frameworks/.DS_Store
+clients/.DS_Store
+log
+tmp
+frameworks/sproutcore
+frameworks/prototype
+.eprj
+.svn
