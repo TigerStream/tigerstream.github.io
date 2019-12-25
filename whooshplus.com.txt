@@ -1,0 +1,6 @@
+server	{
+	listen       80;
+	server_name www.whooshplus.com whooshplus.com;
+	index index.html index.htm ;
+	root  /var/www/whooshplus.com/;
+	}

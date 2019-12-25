@@ -1,0 +1,109 @@
+// Footer
+footer
+  position: relative
+  min-height: 640px
+  padding: 140px 0 30px 0
+  background-color: $footer-primary
+
+  p
+    color: $txt-accent
+    font-size: $nav-font-size
+
+  a
+    color: $txt-light
+    &:hover
+      color: $accent-color
+
+  nav.footer-nav
+    margin: 80px 0 40px 0
+    ul
+      border-top: 1px solid #222
+      padding-top: 45px
+      li
+        display: inline-block
+        margin-right: 30px
+        a
+          font-size: $nav-font-size
+          text-transform: uppercase
+          letter-spacing: 3px
+          display: block
+          &:hover
+            color: $accent-color
+      &:last-child
+        margin-right: 0
+
+  span.fa-heart
+    color: #ff415c
+    font-size: 13px
+    margin: 0 2px
+  
+  .social-share
+    p
+      color: $txt-light
+      text-transform: uppercase
+      padding-bottom: 10px
+    a
+      color: $txt-light
+      font-size: 22px
+      text-align: center
+      padding-right: 20px
+      &:hover
+        color: $txt-light
+      i
+        margin-top: 10px
+    a.twitter-share:hover, a.twitter-share:focus
+      color: #1AB4EF
+    a.facebook-share:hover, a.facebook-share:focus
+      color: #3B5898
+
+.show-map
+  position: absolute
+  top: 180px
+  right: 38%
+  
+  .map-wrap
+    position: relative
+    width: 761px
+    height: 379px
+    display: table
+    background: url("../img/map.png") no-repeat center center
+    z-index: 1
+
+.Shanghai
+  position: absolute
+  top: 180px
+  right: 145px
+  color: white
+  > span
+    /* dot indicator - visible on desktop version only
+    position: relative
+    z-index: 1
+    display: block
+    width: 6px
+    height: 6px
+    border-radius: 50%
+    background: #FF415C
+    +transition(transform 0.4s)
+    /* replace text with background images
+    overflow: hidden
+    text-indent: 100%
+    white-space: nowrap
+  &::after
+    /* this is used to create the pulse animation
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    +border-radius(50%)
+    /* Force Hardware Acceleration
+    +animation(cd-pulse 2s infinite)
+    +backface-visibility(hidden)
+    
++keyframes(cd-pulse)
+  0%
+    box-shadow: 0 0 0 0 rgba(#FF415C, 1)
+  100%
+    box-shadow: 0 0 0 20px rgba(#FF415C, 0)
+    

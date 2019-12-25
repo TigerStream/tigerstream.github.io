@@ -1,0 +1,201 @@
+// Imports
+@import compass
+
+@media screen and (max-width: 1200px)
+  header
+    width: 90%
+    margin: 0 auto
+  
+  .hero .hero-content
+    padding-top: 28%
+  
+  .feature-content
+    display: inline-block
+    width: 70%
+  .products
+    ul.product-icons
+      > li.icon-placeholder a
+        width: 160px
+        height: 160px
+    
+/* Responsive nav kicks in
+@media screen and (max-width: 992px)
+  .header-nav
+    top: 0
+    left: 0
+    position: fixed
+    width: 100%
+    height: 100%
+    z-index: 99999
+    visibility: hidden
+    background-color: black
+    +opacity(0)
+    +transition(opacity 0.5s, visibility 0s 0.5s)
+  ul.member-actions
+    position: static
+  .navicon
+    visibility: visible
+  header
+    .nav-wrapper
+      display: absolute
+    nav
+      position: relative
+      top: 45%
+      +transform(translatey(-45%))
+  nav
+    ul
+      li
+        margin-bottom: 50px
+        a
+          color: #fff
+          font-size: 25px
+          text-transform: uppercase
+          font-weight: 600
+          +transition(all 300ms ease-in-out)
+      &.primary-nav li, &.member-actions li
+        display: block
+    a.login
+      margin-right: 0px
+    ul.primary-nav
+      margin: 0
+      padding: 0
+      text-align: center
+      li a
+        padding-right: 0
+    .member-actions
+      position: static
+      padding: 0
+      text-align: center
+    ul
+      &.primary-nav li, &.member-actions li
+        filter: alpha(opacity = 0)
+        +opacity(0)
+        +transform(translate3d(0, -80px, 0))
+        +transition(transform 0.5s, opacity 0.5s)
+  header .header-nav.open ul
+    &.primary-nav li, &.member-actions li
+      filter: alpha(opacity = 100)
+      +opacity(1)
+      +transform(translate3d(0, 0, 0))
+  nav ul
+    &.primary-nav li
+      &:first-child
+        +transition-delay(0.05s)
+      &:nth-child(2)
+        +transition-delay(0.1s)
+      &:nth-child(3)
+        +transition-delay(0.15s)
+      &:nth-child(4)
+        +transition-delay(0.2s)
+    &.member-actions li
+      &:first-child
+        +transition-delay(0.25s)
+      &:nth-child(2)
+        +transition-delay(0.3s)
+    
+  .device-showcase
+    display: none
+  .services .responsive-service-img
+    display: block
+    width: 85%
+    margin: 15% auto 0
+    img
+      width: 100%
+
+  .unity-showcase
+    +opacity(.25)
+
+  .products
+    ul.product-icons
+      > li.icon-placeholder a
+        width: 128px
+        height: 128px
+
+  footer
+    text-align: center
+    .show-map
+      right: 10%
+      .map-wrap
+        opacity: .6
+    
+        
+@media screen and (max-width: 800px)
+  footer
+    padding-top: 100px
+
+    .contact-list-wrap
+      margin-bottom: 20px
+
+    nav.footer-nav 
+      text-align: center
+      ul
+        border-top: none
+        padding-top: 0
+        margin: 0
+        li
+          margin: 0 8px 0 0
+          padding: 10px 0
+          a
+            text-decoration: underline
+    
+    .copyright
+      font-size: 14px
+
+    .show-map
+      top: 106px
+      right: 0
+    
+@media screen and (max-width: 640px)
+  .projects
+    .next-box
+      min-height: 400px
+
+  .hero
+    min-height: 880px
+    .hero-content
+      padding-top: 42%
+      h1
+        font-size: 54px
+        margin-bottom: 50px
+    .intro
+      font-size: 16px
+      margin-bottom: 50px      
+    .btn
+      display: block
+      width: 80%
+      margin: 0 auto
+      &:first-of-type
+        margin-bottom: 20px
+  
+  .services
+    padding: 120px 0 10px 0
+    
+  .services-extra
+    padding: 80px 0 60px 0
+    .unity-showcase
+      right: 0
+      +opacity(0.15)
+
+  .products
+    padding: 120px 0 60px 0
+    h2
+      font-size: 32px
+    p
+      font-size: 16px
+    ul.product-icons
+      margin: 0 0 75px 0
+      > li.icon-placeholder
+        padding: 30px
+      
+  .why
+    padding: 120px 0 0px 0
+    h2
+      font-size: 44px
+    p.reason
+      margin-bottom: 100px      
+    p.keywords
+      letter-spacing: 3px
+      margin-bottom: 0
+  
+  .down-arrow
+    display: none    
