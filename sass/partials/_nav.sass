@@ -1,0 +1,113 @@
+// Navigation
+.navigation
+  width: 100%
+  position: fixed
+  z-index: 999
+  +transition(all, 300ms, ease-in-out)
+
+.fixed
+  width: 100%
+  position: fixed
+  background-color: #232731
+  z-index: 9999
+
+header
+  padding: 50px 0
+  border-bottom: solid 1px rgba(255, 255, 255, 0.2)
+  position: relative
+  width: 1170px
+  margin: 0 auto
+  +transition(padding, 300ms, ease-in-out)
+  a
+    color: $txt-light
+    text-transform: uppercase
+    font-size: $nav-font-size
+    &.login
+      margin-right: 20px
+  .logo
+    +inline-block
+  ul.primary-nav
+    margin: 0 0 0 75px
+    padding: 0
+    li
+      +inline-block
+      a
+        color: $txt-light
+        padding-right: 25px
+        letter-spacing: 4px
+        &:hover
+          color: $accent-color
+      &:last-child a
+        padding-right: 0px
+  ul.member-actions
+    li
+      display: inline
+      a
+        color: $txt-light
+        &:hover
+          color: $accent-color
+  .header-nav
+    +inline-block
+    float: right
+  .member-actions
+    position: absolute
+    right: 0
+    top: 41px
+    +transition(all, 300ms, ease-in-out)
+
+.header-nav.open
+  visibility: visible
+  opacity: 0.9
+  -webkit-transition: opacity 0.5s
+  transition: opacity 0.5s
+
+.nav-toggle
+  position: absolute
+  top: 0
+  right: 15px
+  z-index: 999999
+  padding: 10px 35px 16px 0
+  cursor: pointer
+
+  &:focus
+    outline: none
+
+  span, span:before, span:after
+    content: ""
+    position: absolute
+    display: block
+    width: 35px
+    height: 3px
+    background: #fff
+    cursor: pointer
+    +border-radius(1px) 
+
+  span:before
+    top: -10px
+
+  span:after
+    bottom: -10px
+
+.nav-toggle span, .nav-toggle span:before, .nav-toggle span:after
+  +transition(all 300ms ease-in-out)
+
+.nav-toggle.active span
+  background-color: transparent
+
+.nav-toggle.active span:before, .nav-toggle.active span:after
+  top: 0
+
+.nav-toggle.active span:before
+  +transform(rotate(45deg))
+
+.nav-toggle.active span:after
+  top: 10px
+  +transform(translatey(-10px) rotate(-45deg))
+
+.navicon
+  position: absolute
+  height: 26px
+  right: 10px
+  top: 48px
+  visibility: hidden
+  +transition(all 300ms ease-in-out)

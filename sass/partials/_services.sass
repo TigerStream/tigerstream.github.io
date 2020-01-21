@@ -1,0 +1,126 @@
+// Features
+.features
+  position: relative
+  z-index: 99
+  background: white
+  padding: 120px 0 100px 0
+
+  span.icon
+    font-size: 40px
+    color: $accent-color
+
+.feature-icon
+  display: inline-block
+  vertical-align: top
+  padding: 12px 0 0 0
+  margin-right: 20px
+  width: 40px
+
+.feature-content
+  display: inline-block
+  width: 80%
+
+// Services
+.services
+  position: relative
+  padding: 170px 0 120px 0
+  p
+    margin-bottom: 0
+    padding-bottom: 0
+  h3
+    margin: 0 0 20px 0
+  span.icon
+    font-size: 35px
+    color: $accent-color
+  .service-icon
+    display: inline-block
+    text-align: center    
+    vertical-align: top
+    padding: 12px 0 0 0
+    margin-right: 20px
+    width: 45px
+  .service-content
+    display: inline-block
+    width: 75%
+  .intro-icon
+    display: inline-block
+    vertical-align: top
+    padding: 6px 0 0 0
+    margin-right: 20px
+  .intro-content
+    display: inline-block
+    width: 80%
+  ul.services-stack
+    margin-top: 50px
+    li
+      margin-top: 20px
+      padding-bottom: 20px
+      border-bottom: solid 1px $keyline-color
+    li:last-child
+      padding-bottom: 0px
+      border-bottom: none
+  
+  .device-showcase
+    position: absolute
+    right: 50%
+    bottom: 100px
+  
+  .iphone-wrap
+    position: absolute
+    left: 300px
+    bottom: 0
+    z-index: 3
+    width: 190px
+    height: 347px
+    background: url("../img/iphone6.png") no-repeat center center
+    +background-size(cover)
+
+  .ipad-wrap
+    position: absolute
+    left: 0
+    bottom: 0
+    z-index: 2
+    width: 417px
+    height: 567px
+    background: url("../img/ipad.png") no-repeat center center
+    +background-size(cover)
+    
+  .macbook-wrap
+    width: 979px
+    height: 596px
+    background: url("../img/macbook.png") no-repeat center center
+    z-index: 1
+    +background-size(cover)
+
+  .zoomloupe
+    position: absolute
+    right: -20px
+    top: 90px
+    z-index: 4
+    width: 300px
+    height: 300px
+    background: url("../img/zoomloupe.png") no-repeat center center
+    +background-size(cover)
+
+.services .responsive-service-img, .services-extra .responsive-service-img, .services-extra .responsive-services-img
+  display: none
+
+.devices
+  position: relative
+
+// Services-extra
+.services-extra
+  position: relative
+  padding: 120px 0
+  z-index: 6
+  .btn
+    margin-top: 20px
+  .unity-showcase
+    position: absolute
+    top: 250px
+    right: 0
+    z-index: -1
+    width: 900px
+    height: 280px
+    background: url("../img/bg_services_2.png") no-repeat center center
+    +background-size(cover)

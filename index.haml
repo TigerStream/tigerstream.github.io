@@ -1,0 +1,303 @@
+!!!
+/[if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="">
+/[if IE 7]    <html class="no-js lt-ie9 lt-ie8" lang="">
+/[if IE 8]    <html class="no-js lt-ie9" lang="">
+<!--[if gt IE 9]><!-->
+%html{:class => 'no-js', :lang => 'en'}<>
+  <!--<![endif]-->
+  %head
+    %meta{:charset => "utf-8"}/
+    / <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %title WELCOME TO WHOOSH+  ART | DESIGN | TECHNOLOGY
+    / TODO 编写头部资料
+    / TODO SEO - Keywords
+    %meta{:content => "", :name => "description"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %link{:href => "apple-touch-icon.png", :rel => "apple-touch-icon"}/
+    %link{:href => "favicon-32x32.png", :rel => "icon", :sizes => "32x32", :type => "image/png"}/
+    %link{:href => "favicon-16x16.png", :rel => "icon", :sizes => "16x16", :type => "image/png"}/
+    %link{:href => "bower_components/normalize-css/normalize.css", :rel => "stylesheet"}/
+    %link{:href => "bower_components/bootstrap/dist/css/bootstrap.min.css", :rel => "stylesheet"}/
+    %link{:href => "bower_components/animate.css/animate.min.css", :rel => "stylesheet"}/
+    %link{:href => "css/jquery.fancybox.css", :rel => "stylesheet"}/
+    %link{:href => "css/flexslider.css", :rel => "stylesheet"}/
+    %link{:href => "css/styles.css", :rel => "stylesheet"}/
+    %link{:href => "css/responsive.css", :rel => "stylesheet"}/
+    %link{:href => "bower_components/etlinefont-bower/style.css", :rel => "stylesheet"}/
+    %link{:href => "bower_components/font-awesome/css/font-awesome.min.css", :rel => "stylesheet"}/
+    %script{:src => "js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"}
+  %body#top
+    /[if lt IE 8] <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    .page-mask
+      .page-loader
+        .spinner
+    %section.navigation.wp5
+      %header
+        .header-content
+          .logo
+            %a{:href => "#"}
+              %img{:alt => "WHOOSH+ logo", :src => "img/logo_whoosh.png"}/
+          .header-nav
+            %nav
+              %ul.primary-nav
+                %li
+                  %a{:href => "#services"} SERVICES
+                %li
+                  %a{:href => "#products"} PRODUCTS
+                %li
+                  %a{:href => "#why"} WHY CHOOSE US ?
+                %li
+                  %a{:href => "#contact"} CONTACT
+          .navicon
+            %a.nav-toggle{:href => "#"}
+              %span
+    %section.hero
+      .hero_overlay
+      .container
+        .row
+          .col-md-12
+            .hero-content
+              %h1.wp1 Technology meets Creativity.
+              %p.intro.wp2 We´re experts in UX/UI design and passionate in concepting innovative (digital) products & brands.
+              %p.keywords.wp3 VIEW | IDEA | VALUE
+              %a.btn.btn-ghost.btn-large.wp4{:href => "#products"} TRY OUR GAME
+      .down-arrow
+        %a{:href => "#intro"}
+          %i.fa.fa-angle-down
+    %section#features.features
+      .container
+        .row
+          .col-md-4.wp6
+            .feature-icon
+              %span.icon.icon-lightbulb
+            .feature-content
+              %h5 CONSULTANCY & CONCEPT
+              %p Review, map out,assess the competitive landscape, critique and provide an honest point of view on wheather your idea will sink or swim.
+          .col-md-4.wp7
+            .feature-icon
+              %span.icon.icon-tools
+            .feature-content
+              %h5 CLEAN & USEABLE DESIGN
+              %p Designed with modern trends and techniques in mind, WHOOSH+ will help your product stand out in an already saturated market.
+          .col-md-4.wp8
+            .feature-icon
+              %span.icon.icon-genius
+            .feature-content.last
+              %h5 DEVELOPMENT & PRODUCTION
+              %p Built using the latest web technologies like html5, css3, and jQuery rest assured, Help you develop the framework through the Game Design Document.
+    %section#services.services
+      .container
+        .row
+          .col-md-5.col-md-offset-7
+            .service-list.wp13
+              %h3 We will drive your product forward
+              %p Present your product, start up, or portfolio in a beautifully modern way. Turn your visitors in to clients.
+              %ul.services-stack
+                %li.service-item
+                  .service-icon
+                    %span.icon.icon-strategy
+                  .service-content
+                    %h5 BRANDING & IDENTITY
+                    %p We will design the complete look & feel, solve communication issues, and even define the name, if you want.
+                %li.service-item
+                  .service-icon
+                    %span.icon.icon-profile-male
+                  .service-content
+                    %h5 USER CENTRIC DESIGN
+                    %p Design UX first, allowing for ease of use and user centric behaviours.
+                %li.service-item
+                  .service-icon
+                    %span.icon.icon-target
+                  .service-content
+                    %h5 USER INTERFACE DESIGN
+                    %p Focus the relevant information, set the right call to action on the best possible position and prepare the content in the right way. That leads to beautiful, easy to use and clear interfaces.
+      
+      .device-showcase
+        .devices
+          .zoomloupe.wp12
+          .iphone-wrap.wp11
+          .ipad-wrap.wp10
+          .macbook-wrap.wp9
+      .responsive-service-img
+        %img{:alt => "responsive devices", :src => "img/devices.png"}/
+    %section#services-extra.services-extra
+      .container
+        .row
+          .col-md-5
+            .service-list.wp14
+              %h3 Game concepting & Production
+              %p Whether custom, branded or licenced, we can help develop the framework through the Game Design Document.Covering everything from game art creation to level design, gameplay review and optimisation to soundtrack creation.
+              %p Once the easy part is finished, we’ll help you take the game to market with the necessary launch kits, teasers and PR programme.                
+              %p 
+                %img{:alt => "Full responsive", :src => "img/full-responsive.png"}/
+              %p 
+                %img{:alt => "Unity Logo", :src => "img/logo_unity.png"}/
+      .unity-showcase.wp15
+    %section#products.products
+      .container
+        .col-md-12
+          %h2.wp20 We make awesome games and content with Unity.
+          %p.wp20 Download the app from the Apple Store, We hope you will like it, Have fun!
+          %ul.product-icons.list-inline
+            %li.icon-placeholder.wp16
+              %a{:href => "https://itunes.apple.com/us/app/brodic-heavens-fall/id830530003?ls=1&mt=8"}
+                %img{:alt => "Brodic Logo", :src => "img/icon_brodic.png"}/
+            %li.icon-placeholder.wp17
+              %a{:href => "https://itunes.apple.com/cn/app/ji-dan-kuai-pao/id862985893?mt=8"}
+                %img{:alt => "Egg Logo", :src => "img/icon_egg.png"}/
+            %li.icon-placeholder.wp18
+              %a{:href => "/"}
+                %img{:alt => "Light's Wish Logo", :src => "img/icon_light's wish.png"}/
+            %li.icon-placeholder.wp19
+              %a{:href => "/"}
+                %img{:alt => "Qingcheng Logo", :src => "img/icon_qingcheng.png"}/
+    %section#why.why
+      .container
+        .row
+          .col-md-10.col-md-offset-1
+            .avatar
+              %img{:alt => "Frosty Soong", :src => "img/avatar.jpg"}/
+            %h2.wp21 " WHY CHOOSE WHOOSH+ ? "
+            %p.reason.wp21 Due to having several of our own projects and attending some startups from the beginning we´re very familiar with concepting projects in their entirety. That means we don´t only understand your requirements, we develop will your idea further to an easy to use product which inspires your customers and performs for your marketers.
+            %p.keywords.wp21 INNOVATION | PRODUCTS | BRANDING
+    %section#projects.projects
+      .container-fluid
+        .row
+          .col-sm-5.col-md-5
+            .project
+              %img{:alt => "WHOOSH+ Projects ChinaNetCloud", :src => "img/projects/chinanetcloud.jpg"}/
+          .col-sm-7.col-md-7
+            .project
+              %img{:alt => "WHOOSH+ Projects WanerSoft", :src => "img/projects/wanersoft.jpg"}/
+        .row
+          .col-sm-7.col-md-7
+            .project
+              %img{:alt => "WHOOSH+ Projects Duqi", :src => "img/projects/duqi.jpg"}
+          .col-sm-5.col-md-5
+            .project
+              %img{:alt => "WHOOSH+ Projects Socrates Ai", :src => "img/projects/socrates.jpg"}
+        .row
+          .col-sm-7.col-md-7
+            .row
+              .col-sm-6.col-md-6
+                .project
+                  %img{:alt => "WHOOSH+ Projects Xindianbao", :src => "img/projects/xdb.jpg"}
+              .col-sm-6.col-md-6
+                .project
+                  %img{:alt => "WHOOSH+ Projects Shop", :src => "img/projects/shop.jpg"}
+          .col-sm-5.col-md-5
+            .project
+              %img{:alt => "WHOOSH+ Projects Jinbo", :src => "img/projects/jinbo.jpg"}
+        .row
+          .col-sm-7.col-md-7
+            .project
+              %img{:alt => "WHOOSH+ Projects Milkdaily", :src => "img/projects/milkdaily.jpg"}
+          .col-sm-5.col-md-5
+            .project
+              %img{:alt => "WHOOSH+ Projects CACS", :src => "img/projects/cacs.jpg"}
+        .row
+          .col-sm-7.col-md-7
+            .row
+              .col-sm-6.col-md-6
+                .project
+                  %img{:alt => "WHOOSH+ Projects Mandarin", :src => "img/projects/mandarin.jpg"}
+              .col-sm-6.col-md-6
+                .project
+                  %img{:alt => "WHOOSH+ Projects Kitchen", :src => "img/projects/kitchen.jpg"}
+          .col-sm-5.col-md-5
+            .project
+              %img{:alt => "WHOOSH+ Projects Brochure", :src => "img/projects/brochure.jpg"}
+      
+        .row.next
+          .col-sm-7.col-md-7
+            .project
+              %img{:alt => "WHOOSH+ Projects Logico", :src => "img/projects/logico.jpg"}
+              / .project-wrap
+              /   .project-info-wrap
+              /     .project-info
+              /       .project-logo
+              /         %img{:alt => "WHOOSH+ Projects Logico", :src => "img/projects/socrates_logo.png"}
+              /       .project-name Logico Pro
+              /       .project-type Reesign & Development
+              /       .project-type Responsive Website
+              /   .project-img
+              /     %img{:alt => "WHOOSH+ Projects Logico", :src => "img/projects/logico.jpg"}
+          .col-sm-5.col-md-5
+            .project.next-box
+              %h4 GETTING STARTED WITH WHOOSH+ :)
+    %footer#contact.contact
+      .container
+        .show-map.wp22
+          .map-wrap
+            .Shanghai
+              %span
+        .row
+          .col-md-3.col-md-offset-9
+            .contact-list-wrap
+              %ul.contacnt-list.wp22
+                %li
+                  %h5 EMAIL:
+                  %p
+                    %a{:href => "mailto:hello@whooshplus.com"} HELLO@WHOOSHPLUS.COM
+                %li
+                  %h5 PHONE:
+                  %p +86 150 2141 0710
+                %li
+                  %h5 ADDRESS:
+                  %p
+                    1739 Lane, Tibet South Road 
+                    %br
+                    Huangpu District, Shanghai, China.                    
+                  %p
+                    No.5 Longhu Times Street
+                    %br
+                    Yuzhong District, ChungKing, China.                    
+                %li.social-share
+                  %p Share WHOOSH+ with your friends
+                  %a.twitter-share{:href => "https://facebook.com/TigerStreamGame"}
+                    %i.fa.fa-twitter
+                  %a.facebook-share{:href => "https://twitter.com/TigerStreamGame"}
+                    %i.fa.fa-facebook                    
+        .row
+          .col-md-8
+            %nav.footer-nav.wp22
+              %ul
+                %li
+                  %a{:href => "#features"} Features
+                %li
+                  %a{:href => "#projects"} Projects
+                %li
+                  %a{:href => "/labs"} Lab
+                %li
+                  %a{:href => "#products"} Games
+                %li
+                  %a{:href => "http://creativecommons.org/licenses/by-nc-nd/4.0/", :rel => "license"} Licence
+                %li
+                  %a{:href => "http://creativecommons.org/licenses/by-nc-nd/4.0/legalcode", :rel => "license"} Legal
+            %p.copyright.wp22
+              Copyright © 2015 Whoosh (Shanghai) Network Technology Co., Ltd. 
+              %br/
+              %a{:href => "/"} Licence
+              | Design & Developed
+              %span.fa.fa-heart.pulse2
+              by
+              = succeed "." do
+                %a{:href => "/"} Frosty Soong          
+    %script{:src => "bower_components/jquery/dist/jquery.min.js"}
+    %script{:src => "bower_components/retina.js/dist/retina.js"}
+    %script{:src => "bower_components/classie/classie.js"}
+    %script{:src => "bower_components/jquery-waypoints/lib/jquery.waypoints.min.js"}
+    %script{:src => "bower_components/bootstrap/dist/js/bootstrap.min.js"}
+    %script{:src => "js/jquery.fancybox.pack.js"}
+    %script{:src => "js/jquery.flexslider-min.js"}
+    %script{:src => "js/jquery.wait.js"}
+    %script{:src => "js/scripts.js"}
+    / Google Analytics: change UA-XXXXX-X to be your site's ID.
+    / :javascript
+    /   (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    /   function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    /   e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    /   e.src='//www.google-analytics.com/analytics.js';
+    /   r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    /   ga('create','UA-XXXXX-X','auto');ga('send','pageview');
